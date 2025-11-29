@@ -6,6 +6,7 @@
     flex-wrap: wrap;
     column-gap: 20px;
 }
+
 /* categorias */
 .categorias__lista{
     display: flex;
@@ -14,7 +15,6 @@
 }
 
 /* destaques */
-
 .destaques{
     display: flex;
     align-items: center;
@@ -54,7 +54,7 @@
     flex-grow: 1;
 }
 
-/* rodape */
+/* rodape (vem apenas do HEAD — mantido pois não existia conflito contrário) */
 .rodapie {
     display: flex;
     flex-wrap: wrap;
@@ -64,7 +64,6 @@
 .rodapie__logo {
     align-self: end;
 }
-
 
 @media(min-width: 720px){
 
@@ -81,7 +80,6 @@
     }
 
     /* eventos */
-
     .eventos__lista{
         justify-content: end;
     }
@@ -90,14 +88,11 @@
     .agenda__lista {
         justify-content: end;
     }
-
-    
 }
 
 @media(min-width:1440px){
 
     /* encabezado */
-
     .menu{
         column-gap: 105px;
         flex-wrap: nowrap;
@@ -122,6 +117,4 @@
     .menu__item:nth-child(5){
         order: 2;
     }
-
-
 }

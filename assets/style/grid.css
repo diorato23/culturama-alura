@@ -2,7 +2,6 @@
 .banner{
     display: grid;
     gap:1rem;
-
 }
 
 .banner img:nth-child(1){
@@ -11,77 +10,67 @@
 
 .banner img:nth-child(4){
     grid-column: 2/3;
-    grid-row: 2/4
+    grid-row: 2/4;
 }
 
-/* tarjeta evento */
-
-.eventos__item{
+/* tarjeta evento (unificando HEAD + remoto) */
+.eventos__item {
     display: grid;
     grid-template-columns: 1fr auto;
-    grid-template-rows: auto repeat(2, 1fr) auto ;
+    grid-template-rows: auto repeat(2, 1fr) auto;
     grid-template-areas: 
-    "imagen imagen"
-    "nombre nombre"
-    "fecha fecha"
-    "lugar boton"
-    ;
+        "imagen imagen"
+        "nombre nombre"
+        "fecha fecha"
+        "lugar boton";
 }
 
 .eventos__item img{
-    grid-area:  imagen;
-
+    grid-area: imagen;
 }
 
 .eventos__item h3{
     grid-area: nombre;
     align-self: center;
-   
 }
 
 .eventos__item h4{
-    grid-area:  fecha;
-
+    grid-area: fecha;
 }
 
 .eventos__item h5{
-    grid-area:  lugar;
+    grid-area: lugar;
     align-self: end;
 }
 
 .eventos__item button{
-    grid-area:  boton;
-
+    grid-area: boton;
 }
 
-
-/*desafío Aula 4*/
+/* desafío Aula 4 */
 .agenda__item {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto 1fr;
-  }
-  
-  
-  .agenda__item img {
-      grid-column: 1/ 3;
-  }
+}
+
+.agenda__item img {
+    grid-column: 1 / 3;
+}
 
 @media(min-width:720px){
-    .banner{
+    .banner {
         grid-template-columns: calc(50% - 0.75rem) auto auto;
-        column-gap:  1.5em; 
+        column-gap: 1.5rem;
     }
+
     .banner img:nth-child(1){
         grid-column: 1/2;
-        grid-row: 1/3
+        grid-row: 1/3;
     }
     
     .banner img:nth-child(4){
         grid-column: 3/4;
-        grid-row: 1/3
+        grid-row: 1/3;
     }
-
-    
-
 }
